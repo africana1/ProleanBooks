@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
     <div class="row">
       <div class="col m8 offset-m2 s12">
         <h4 class="center">Add a Book</h4>
-        <form class="" action="add-book.php" method="POST">
+        <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
           <label for="email">Your Email</label>
           <input type="text" name="email" id="email"
             value="<?php echo htmlspecialchars($email); ?>" maxlength="30">
