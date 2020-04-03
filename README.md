@@ -4,7 +4,7 @@ Simple PHP Book Web App
 
 How To Use & Connect
 
-1. Import ProleanBooks.sql via PhpMyAdmin which will automatically create the Database
+1. Import ProleanBooks.sql via PhpMyAdmin which will automatically creates the Database
 
 2. Navigate to config/db-connect.php and input your Database username and password
 
