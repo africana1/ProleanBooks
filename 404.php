@@ -1,5 +1,5 @@
 <?php
-
+include('config/myId.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,17 +9,20 @@
   <?php include('templates/header.php'); ?>
 </head>
 
-<body>
+<body class="<?php echo htmlspecialchars($bodyClass); ?>">
 
   <?php include('templates/navbar.php'); ?>
+  <div class="container center">
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h2>Oops 404!</h2>
+        <p class="blockquote">Sorry that wasn't you, our server was sleeping... Our
+          Webmaster has been notified</p>
+        <a href="index" class="btn custom-font1 teal-background">Home</a>
+      </div>
+    </div>
 
-  <div class="col-md-6 pl-md-5">
-    <h2 class="text-black display-4">Oops 404!</h2>
-    <p class="lead">Sorry that wasn't you, our server was sleeping... Our Webmaster
-      has been notified</p>
-    <a href="index" class="btn custom-font1 teal-background">Home</a>
   </div>
-
   <?php include('templates/footer.php'); ?>
 
 </body>
